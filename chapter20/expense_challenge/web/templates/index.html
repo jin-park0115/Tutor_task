@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지출 관리</title>
+</head>
+<body>
+    <h1>지출 관리 (준비중)</h1>
+
+    <form id="expense-form">
+    <input type="date" name="date" required>
+    <input type="text" name="category" placeholder="카테고리" required>
+    <input type="text" name="description" placeholder="내용" required>
+    <input type="number" name="amount" placeholder="금액" required>
+    <button type="submit">추가</button>
+  </form>
+
+  <p id="error-msg" style="color: red;"></p>
+    <div id="search-box">
+    <input type="text" id="search-input" placeholder="카테고리, 내용 검색...">
+    </div>
+  <h2>총 지출: <span id="total">0</span>원</h2>
+
+  <table id="expense-table">
+    <thead>
+      <tr><th>날짜</th><th>카테고리</th><th>내용</th><th>금액</th></tr>
+    </thead>
+    <tbody id="expense-body">
+    </tbody>
+  </table>
+
+  <script src="/static/scripts.js"></script>
+</body>
+</html>
